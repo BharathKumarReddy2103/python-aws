@@ -10,7 +10,6 @@ resource "aws_cloudwatch_event_rule" "ec2_auto_start_rule" {
   schedule_expression = "cron(43 13 ? * MON-FRI *)" # 8 AM UTC, Monday to Friday
 }
 
-
 resource "aws_cloudwatch_event_target" "ec2_auto_start_target" {
   rule      = aws_cloudwatch_event_rule.ec2_auto_start_rule.name
   target_id = "EC2AutoStartLambda"
