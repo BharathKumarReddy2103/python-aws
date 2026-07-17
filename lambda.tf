@@ -1,6 +1,6 @@
 data "archive_file" "ec2_auto_start_zip" {
   type        = "zip"
-  source_file = "${path.module}/ec2_auto-start.py"
+  source_file = "${path.module}/ec2_auto_start.py"
   output_path = "${path.module}/ec2_auto_start.zip"
 }
 
