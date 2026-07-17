@@ -31,3 +31,4 @@ def lambda_handler(event, context):
     }
     region = 'us-east-1'
     stop_instances_by_tag(tags, region)
+    
